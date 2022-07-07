@@ -8,7 +8,7 @@ from django import template
 
 from django.urls import (reverse, NoReverseMatch)  # django2.0
 from django.db import models
-from django.utils import six
+import six
 from django.utils.html import escape
 from django.utils.safestring import mark_safe
 
