@@ -8,9 +8,9 @@ Created on 14/4/2017
 '''
 from __future__ import unicode_literals
 
-from django.conf.urls import url
 from django.http.response import HttpResponse
 from django.shortcuts import get_object_or_404
+from django.urls import re_path as url
 
 from cruds_adminlte import utils
 from cruds_adminlte.templatetags.crud_tags import crud_inline_url

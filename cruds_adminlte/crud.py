@@ -7,9 +7,10 @@ Free as freedom will be 26/8/2016
 '''
 
 
-from django.conf.urls import url, include
+from django.conf.urls import include
 from django.contrib.auth.decorators import login_required
 from django.http.response import HttpResponseRedirect, HttpResponseForbidden
+from django.urls import re_path as url
 from django.urls.base import reverse_lazy, reverse
 from django.urls.exceptions import NoReverseMatch
 from django.views import View
@@ -19,7 +20,7 @@ from django.views.generic import (ListView, CreateView, DeleteView,
 from cruds_adminlte import utils
 from django.contrib.auth.models import Permission
 from django.contrib.contenttypes.models import ContentType
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from django.db.models.query_utils import Q
 from django.shortcuts import get_object_or_404
 from cruds_adminlte.filter import get_filters
